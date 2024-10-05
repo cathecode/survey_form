@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey-form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Summer Survey Form</h1>
+    <p id="description"><i>Thank you for taking the time to respond</i></p>
+ 
+ <form method="post" action="" id="survey-form">
+   <fieldset>
+ <div class="inputElement">
+      <label id="name-label" for="name">Name </label>
+      <input id="name"  type="text" placeholder="Enter your name" name="name" required>
+ 
+      <label id="email-label" for="email">Email </label>
+      <input id="email" type="email" placeholder="Enter your Email" name="email" required>
+ 
+      <label id="number-label" for="number">Age (optional) </label>
+      <input id="number" type="number" placeholder="Age" name="number" min="10" max="100" required>
+ </div>
+ 
+ <div class="inputElement">
+    <label id="select-label" for="dropdown">What is your favorite place to vacation?</label>
+      <select name="dropdown" id="dropdown"required>
+         <option value="">Select a location</option>
+         <option value="Beach">Beach</option>
+         <option value="Water-park">Water park</option>
+         <option value="Amusement-park">Amusement park</option>
+         <option value="Cabins-near-lakes">Cabins near lakes</option>
+         <option value="Other">Other</option>
+      </select>
+ </div>     
+ 
+ <div>
+   <label>Do you like to travel with friends?</label>
+         <label for="yes"><input id="yes" type="radio" name="travel-with-friends" value="yes" checked/> Yes</label>
+         <label for="no"><input id="no" type="radio" name="travel-with-friends" value="no"/> No</label>
+  </div> 
+ 
+ <div class="inputElement">
+    <label for="favorites">What is your favorite country in the world to vacation?</label>
+      <select name="favorites" id="favorites"required>
+         <option value="">Select an option</option>
+         <option value="Venezuela">Venezuela</option>
+         <option value="New-York">New York</option>
+         <option value="Paris">Paris</option>
+         <option value="London">London</option>
+      </select>
+   </div>
+ 
+ <div>
+  <label>What would you like to do this summer?</label>
+         <label for="Sleep"><input id="Sleep" type="checkbox" name="Sleep" value="Sleep"/> Sleep</label>
+         <label for="Travel-within-the-country"><input id="Travel-within-the-country" type="checkbox" name="Travel-within-the-country" value="Travel-within-the-country"/> Travel within the country</label>
+         <label for="Travel-abroad"><input id="Travel-abroad" type="checkbox" name="Travel-abroad" value="Travel-abroad"/> Travel abroad</label>
+         <label for="Eat"><input id="Eat" type="checkbox" name="Eat" value="Eat"/> Eat</label>
+         <label for="Play-Video-Games"><input id="Play-Video-Games" type="checkbox" name="Play-Video-Games" value="Play-Video-Games"/> Play Video Games</label>
+         <label for="Learn-new-things"><input id="Learn-new-things" type="checkbox" name="Learn-new-things" value="Learn-new-things"/> Learn new things</label>
+ </div>
+         
+          <label for="comments">Any comments?
+           <textarea id="comments" name="comments" rows="7" cols="55" placeholder="Enter your comment here..."></textarea>
+         </label>
+ 
+         <input id="submit" type="submit" value="Submit" />
+       </fieldset>   
+    </form>
+</body>
+</html>
